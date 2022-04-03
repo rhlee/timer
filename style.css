@@ -12,3 +12,21 @@ input {
   width: 100vw;
   text-align: center;
 }
+
+@keyframes darken {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+:root {
+  --time: 0s;
+}
+
+.active {
+  animation: darken 1s, darken 1s linear var(--time) reverse;
+  animation-fill-mode: forwards;
+}
