@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+input {
+  font-size: 5vw;
+  -moz-appearance: textfield;
+  height: 100vh;
+  display: block;
+  border: 0;
+  padding: 0;
+  width: 100vw;
+  text-align: center;
+}
