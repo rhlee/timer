@@ -12,6 +12,7 @@ setTimeout(
         rootStyle.setProperty("--time", (seconds - factorSeconds()) +  "s");
         rootStyle.setProperty("--duration", (factorSeconds() * 2) +  "s");
         minutes.remove();
+        document.documentElement.requestFullscreen();
       }}
     );
   },
