@@ -6,7 +6,7 @@ setTimeout(
       "keyup",
       event => {if (event.key === "Enter") {
         document.body.classList.add("active");
-        const seconds = minutes.value;
+        const seconds = minutes.value * 60;
         const factorSeconds = () => seconds * factor * Math.random();
         const rootStyle = document.documentElement.style;
         rootStyle.setProperty("--time", (seconds - factorSeconds()) +  "s");
