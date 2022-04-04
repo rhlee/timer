@@ -24,9 +24,10 @@ input {
 
 :root {
   --time: 0s;
+  --duration: 0s;
 }
 
 .active {
-  animation: darken 1s, darken 1s linear var(--time) reverse;
+  animation: darken 1s, darken var(--duration) linear var(--time) reverse;
   animation-fill-mode: forwards;
 }
